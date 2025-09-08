@@ -4,3 +4,201 @@
 *:after {
   box-sizing: border-box;
 }
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#top-header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: block;
+  width: 100%;
+}
+
+#wrapper {
+  display: block;
+}
+
+.siteName a {
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 1.5rem;
+  background-color: #001830;
+  padding: 1rem;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+
+.delorean-hero {
+  background-image: url("/images/vehicles/delorean.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem;
+  color: rgb(0, 100, 167);
+}
+
+.delorean-hero div {
+  background-color: rgba(168, 168, 168, 0.549);
+  width: 50%;
+}
+
+.hero-content {
+  padding: 0.5rem;
+}
+
+.hero-content button{ 
+  background-color: rgb(0, 100, 167);
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.delorean-reviews {
+  padding: 2rem 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.delorean-reviews h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.delorean-reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.delorean-reviews li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.delorean-upgrades {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.delorean-upgrades h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.upgrade-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.upgrade-options a {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.upgrade-options a:hover {
+  transform: scale(1.05);
+}
+
+.upgrade-options img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+  background-image: url("/images/site/checkerboard.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.page-container {
+  background-color: white;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  
+  #wrapper {
+  display: block;
+}
+
+  .delorean-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .delorean-hero div {
+    width: 40%;
+    padding: 1rem;
+  }
+
+  .delorean-reviews,
+  .delorean-upgrades {
+    width: 50%;
+  }
+
+  .delorean-reviews,
+  .delorean-upgrades {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .review-upgrade-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+    footer {
+    clear: both;
+    width: 100%;
+  }
+
+}
