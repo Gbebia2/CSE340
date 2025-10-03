@@ -1,0 +1,27 @@
+<% if (title) { %>
+  <h1><%= title %></h1>
+<% } %>
+
+<% if (message && message.length > 0) { %>
+  <div class="flash-message">
+    <p><%= message %></p>
+  </div>
+<% } %>
+
+<% if (errors && errors.length > 0) { %>
+  <ul class="notice">
+    <% errors.forEach(err => { %>
+      <li><%= err.msg %></li>
+    <% }) %>
+  </ul>
+<% } %>
+
+<form action="/inv/classification/add" method="post">
+  <label for="classification_name">New Classification Name:</label>
+  <input type="text" id="classification_name" name="classification_name"
+         pattern="^[A-Za-z0-9]+$"
+         title="Classification cannot contain spaces or special characters"
+         value="<%= locals.classification_name || '' %>"
+         required>
+  <button type="submit">Add Classification</button>
+</form>

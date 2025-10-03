@@ -15,7 +15,7 @@
 }
 
 #top-header a {
-  color: rgb(0, 0, 0);
+  
   text-decoration: none;
   font-weight: bold;
 }
@@ -37,8 +37,12 @@ nav {
   margin-top: 1.5rem;
   background-color: #001830;
   padding: 1rem;
-  color: white;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;}
 
 nav ul {
   display: flex;
@@ -392,4 +396,82 @@ footer p a.error-link {
   font-weight: bold;
   list-style-type: none;
   padding: 0.5em;
+}
+
+.inventory-link {
+  color: #0077cc; /* nice blue */
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inventory-link:hover {
+  color: #005fa3;
+}
+
+/* Add Inventory Form Styles */
+.add-inventory-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-inventory-form label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+  display: block;
+}
+
+.add-inventory-form input[type="text"],
+.add-inventory-form input[type="number"],
+.add-inventory-form textarea,
+.add-inventory-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.add-inventory-form button {
+  margin-top: 12px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.add-inventory-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Flash messages & errors */
+.add-inventory-form .flash-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 15px;
+}
+
+.add-inventory-form .notice {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+  list-style: none;
 }
