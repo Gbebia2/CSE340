@@ -255,3 +255,141 @@ footer p a.error-link {
     flex-direction: column;
   }
 }
+
+.login-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #0077cc;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #005fa3;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.login-form p a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form p a:hover {
+  background: #1e7e34;
+}
+
+/* ===== Register Form ===== */
+.register-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.register-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.register-form input:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0,86,179,0.3);
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0056b3;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.register-form button:hover {
+  background: #003f80;
+}
+
+.flash-message {
+  background: #ffe6e6;
+  color: #cc0000;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cc0000;
+  border-radius: 4px;
+}
+
+.notice {
+  color: red;
+  font-weight: bold;
+  list-style-type: none;
+  padding: 0.5em;
+}
